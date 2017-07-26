@@ -1,0 +1,9 @@
+form.signupForm(action='/signup', method='POST')
+  input(type='email', name='signupEmail', placeholder='Email', required='')
+  br
+  input(type='password', name='signupPassword', placeholder='Password', required='')
+  input(type='password', name='signupPasswordCheck', placeholder='Verify Password', required='')
+  br
+  input(type='submit', value='Signup')
+if msg
+  h1 #{msg}

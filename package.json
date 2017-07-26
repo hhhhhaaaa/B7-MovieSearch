@@ -1,0 +1,33 @@
+{
+  "name": "httpauthentication",
+  "version": "1.0.0",
+  "description": "Fifth benchmark of Phase 2",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "nodemon",
+    "drop": "psql users -c 'DROP TABLE users'",
+    "schema": "psql users -f schema.sql"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hhhhhaaaa/B6-HTTPAuthentication.git"
+  },
+  "author": "Doug L.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hhhhhaaaa/B6-HTTPAuthentication/issues"
+  },
+  "homepage": "https://github.com/hhhhhaaaa/B6-HTTPAuthentication#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.2",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.2",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "pg-promise": "^6.3.5",
+    "pug": "^2.0.0-rc.2"
+  }
+}
